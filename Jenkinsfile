@@ -7,12 +7,11 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-    }  
 
-    post {
-        always {
-            cleanWS()
+        stage('Build SUCCESSSSS'){
+            steps {
+                sh "echo succcccccccccccccccccccccccccccccccccccc"
+            }
         }
-    }
-
+    }  
 }
