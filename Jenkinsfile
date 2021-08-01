@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+
+    }
     stages {
         stage('Build Maven'){
             steps {
@@ -9,6 +11,11 @@ pipeline {
                    echo "end download maven"
                 '''
             }
+        }
+    }
+    post{
+        always {
+            cleanWs()
         }
     }  
 }
