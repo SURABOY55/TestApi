@@ -7,11 +7,5 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-
-        stage('Build SUCCESSSSS'){
-            steps {
-                sh "echo succcccccccccccccccccccccccccccccccccccc"
-            }
-        }
     }  
 }
