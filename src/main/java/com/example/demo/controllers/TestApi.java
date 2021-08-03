@@ -13,4 +13,10 @@ public class TestApi {
 		return "cosmetics";
 	}
 
+	@GetMapping("/testBranchNs") // แบบนี้
+	public String testBranchNs() {
+		return "testBranchNs";
+	}
+
+
 }
